@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens que se adapta de acordo com o dispositivo</h1>
+        <p>segue a baixo</p>
+            <picture>
+                <source media="(max-width: 700px)" srcset="imagens/sem.png" type="image/png">
+                <source media="(max-width: 1050px)" srcset="imagens/media.png" type="image/png">
+                <img src="imagens/grande.png" alt="">
+            </picture>
+    
+    <h1>Audios</h1>
+
+        <audio src="Here it Comes - TrackTribe.mp3" controls></audio>
+        <audio preload="none" controls loop>
+            <source src="Here it Comes - TrackTribe.mp3" type="audio/mpeg">  <!--mpeg epara mp3-->
+            <source src="Here it Comes - TrackTribe.ogg" type="audio/ogg">
+            <source src="Here it Comes - TrackTribe.wav" type="audio/wav"> <!--wav e o mais pesados-->
+            <p>não foi possivel carregar</p>
+        </audio>
+</body>
+</html>
