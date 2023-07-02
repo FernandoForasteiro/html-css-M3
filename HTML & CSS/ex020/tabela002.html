@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Grandes</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            width: 400px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 5px;
+            background-color: dimgray;
+
+        }
+
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        thead, tfoot{
+            background-color:cornflowerblue;
+            color: aliceblue;
+        }
+        
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: cornflowerblue;
+        }
+
+
+        tbody > tr:nth-child(odd)/*tambem pode usar 2n ou 2n-1 tem o 3n*/{
+            background-color: rgb(146, 137, 137);
+        }
+        tbody > tr:nth-child(even) {
+            background-color: white;
+        }
+
+        th.tab{
+            width: 90px;
+        }
+
+        td.num {
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!--
+        Anatomia para tabelas grandes
+        Caption (Legenda)
+        Table
+            THead
+                TR, TD ,TH
+            TBody
+                TR, TD ,TH
+            TFoot
+                TR, TD ,TH
+    -->
+
+    <table>
+        <caption>População Dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" class="tab">População</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 048</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21 168 756</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            <tr>
+                <td>Acre</td>
+                <td class="num">400 000</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">11 345 775</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td class="num"><strong>100 000 000</strong></td>
+            </tr>
+
+        </tfoot>
+    </table>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque dolorum ducimus beatae at explicabo minus error numquam quisquam eligendi. Dolor sint impedit modi cupiditate nisi eius! Vel dicta consequatur aut.</p>
+
+</body>
+</html>
