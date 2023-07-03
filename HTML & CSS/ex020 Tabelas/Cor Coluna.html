@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            width: 400px;
+            border-collapse: collapse;
+        }
+
+        td, th{
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        col.nm{
+            background-color: aquamarine;
+        }
+
+        col.nj{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <colgroup>
+            <col class="nm">
+            <col class="nj" span="2">
+            <col class="nb">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>42</td>
+                <td>Jornalista</td>
+            </tr>
+
+            <tr>
+                <td>Julio cesa</td>
+                <td>M</td>
+                <td>50</td>
+                <td>Carteiro</td>
+            </tr>
+
+            <tr>
+                <td>Sueli</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Modelo</td>
+            </tr>
+
+            <tr>
+                <td>Mario</td>
+                <td>M</td>
+                <td>24</td>
+                <td>Motoboy</td>
+            </tr>
+
+            <tr>
+                <td>Kesia</td>
+                <td>F</td>
+                <td>56</td>
+                <td>Aposentada</td>
+            </tr>
+
+            <tr>
+                <td>Nicole</td>
+                <td>F</td>
+                <td>45</td>
+                <td>Atendente</td>
+            </tr>
+
+            <tr>
+                <td>Luisa</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Supervisora</td>
+            </tr>
+
+            <tr>
+                <td>Felipe</td>
+                <td>M</td>
+                <td>25</td>
+                <td>Pedreiro</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
